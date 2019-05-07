@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+        "access_token": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "vec": {
+                    "description": "Vector",
+                    "items": {
+                        "format": "double",
+                        "type": "number"
+                    },
+                    "type": "array"
+                },
+                "word": {
+                    "description": "Word",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "vec",
+                "word"
+            ],
+            "type": "object"
+        }
+    }
+}

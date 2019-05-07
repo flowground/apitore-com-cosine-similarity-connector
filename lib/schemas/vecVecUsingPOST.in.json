@@ -1,0 +1,34 @@
+{
+    "type": "object",
+    "properties": {
+        "access_token": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "vec1": {
+                    "description": "Vector1",
+                    "items": {
+                        "format": "double",
+                        "type": "number"
+                    },
+                    "type": "array"
+                },
+                "vec2": {
+                    "description": "Vector2",
+                    "items": {
+                        "format": "double",
+                        "type": "number"
+                    },
+                    "type": "array"
+                }
+            },
+            "required": [
+                "vec1",
+                "vec2"
+            ],
+            "type": "object"
+        }
+    }
+}
